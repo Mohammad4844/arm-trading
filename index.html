@@ -65,7 +65,7 @@
           <label for="categoryFilter" class="mb-2 sm:mb-0 font-medium text-gray-700">Choose Category:</label>
           <select id="categoryFilter" class="border border-gray-300 rounded-md p-2 w-full sm:w-60 focus:ring-2 focus:ring-sky-600">
             <option value="all">All Products</option>
-            <option value="Office Supplies">Office Supplies</option>
+            <option value="Supplies">Supplies</option>
             <option value="Food Items">Food Items</option>
           </select>
         </div>
@@ -93,53 +93,131 @@
     <script>
       const products = [
         {
-          title: "Heavy‑Duty Stapler",
-          category: "Office Supplies",
-          image: "images/stapler.jpg",
-          description: "Precision‑engineered stapler built to handle up to 50 sheets effortlessly — perfect for busy offices."
+          title: "Scotch Heavy Duty Shipping Packing Tape, Clear, Shipping and Packaging Supplies, 1.88 in. x 54.6 yd., 6 Tape Rolls",
+          category: "Supplies",
+          image: "images/1.jpg",
         },
         {
-          title: "Hardcover Notebook",
-          category: "Office Supplies",
-          image: "images/notebook.jpg",
-          description: "200‑page, lay‑flat notebook with premium 100 gsm paper — ideal for note‑taking, journaling, or sketches."
+          title: "Scotch Heavy Duty Shipping and Moving Packing Tape, Clear, Packing and Moving Supplies, 1.88 in. x 22.2 yd., 6 Tape Rolls with Dispensers",
+          category: "Supplies",
+          image: "images/2.jpg",
         },
         {
-          title: "Bamboo Desk Organizer",
-          category: "Office Supplies",
-          image: "images/desk-organizer.jpg",
-          description: "Sustainable bamboo organizer that keeps pens, sticky notes & gadgets tidy while adding a natural touch."
+          title: "Puffs Plus Lotion Facial Tissues, 10 Cubes, 56 Tissues Per Box",
+          category: "Supplies",
+          image: "images/3.jpg",
         },
         {
-          title: "Bamboo Desk Organizer",
-          category: "Office Supplies",
-          image: "images/desk-organizer.jpg",
-          description: "Sustainable bamboo organizer that keeps pens, sticky notes & gadgets tidy while adding a natural touch."
+          title: "Mr. Clean Magic Eraser Ultra Thick Multi Purpose Cleaner, Bathroom Cleaning Supplies, Magic Eraser Sponge Multi Surface Cleaner, 5ct",
+          category: "Supplies",
+          image: "images/4.jpg",
         },
         {
-          title: "Bamboo Desk Organizer",
-          category: "Office Supplies",
-          image: "images/desk-organizer.jpg",
-          description: "Sustainable bamboo organizer that keeps pens, sticky notes & gadgets tidy while adding a natural touch."
+          title: "Sharpie S-Gel , Drawing, Ink Pens For Journaling, Writing, Coloring, Medium Point (0.7Mm), Pearl White Body, Black Ink Gel-Pen, 12 Count",
+          category: "Supplies",
+          image: "images/5.webp",
         },
         {
-          title: "Organic Wildflower Honey",
+          title: "Scotch Magic Tape, Invisible, Home Office Supplies and Back to School Supplies for College and Classrooms, 6 Rolls with Dispensers",
+          category: "Supplies",
+          image: "images/6.jpg",
+        },
+        {
+          title: "Nabisco Classic Mix Variety Pack, OREO Mini, CHIPS AHOY! Mini, Nutter Butter Bites, RITZ Bits Cheese, 20 Snack Packs",
           category: "Food Items",
-          image: "images/honey.jpg",
-          description: "Raw, unfiltered honey sourced from regional apiaries — sweet, floral, and packed with nutrients."
+          image: "images/7.jpg",
         },
         {
-          title: "Gourmet Coffee Beans",
+          title: "Pringles Potato Crisps Chips, On-the-Go Snacks, Snack Stacks, Variety Pack, 19.3oz Box (27 Cups)​​",
           category: "Food Items",
-          image: "images/coffee-beans.jpg",
-          description: "100% Arabica beans, small‑batch roasted for a balanced, full‑bodied flavor with notes of cocoa & caramel."
-        }
+          image: "images/8.jpg",
+        },
+        {
+          title: "Kellogg's Cheez-It, Pringles & Rice Krispies Treats Snacks Mega Variety Pack, 30.1oz Box (30 Count)",
+          category: "Food Items",
+          image: "images/9.jpg",
+        },
+        {
+          title: "Paper Mate InkJoy Gel Pens, Assorted, Medium Point (0.7mm), 14 Count - Smooth Writing, Back to School Supplies for Teachers & Students, Perfect for Journaling, Note-Taking, Doodling, Gifts",
+          category: "Supplies",
+          image: "images/10.jpg",
+        },
+        {
+          title: "Paper Mate Flair Felt Tip Pens, Medium Point (0.7mm), Assorted Colors, 12 Count - Back to School Supplies for Teachers & Students, Ideal for Coloring, Decorating, Note-Taking, Gifts",
+          category: "Supplies",
+          image: "images/11.jpg",
+        },
+        {
+          title: "Nestle Coffee mate Coffee Creamer, French Vanilla, Liquid Creamer Singles, Non Dairy, No Refrigeration, 0.375 fl oz Tubs (Pack of 180)",
+          category: "Food Items",
+          image: "images/12.jpg",
+        },
+        {
+          title: "Mr. Clean Magic Eraser, Extra Durable, Multi Purpose Cleaner, Shoe, Bathroom, Shower, and Car Window and Windshield Cleaner, Cleaning Pads, 10 Count",
+          category: "Supplies",
+          image: "images/13.jpg",
+        },
+        {
+          title: "McCafe Premium Roast, Medium Roast Ground Coffee, 30 oz Canister",
+          category: "Food Items",
+          image: "images/14.jpg",
+        },
+        {
+          title: "Elmer's Disappearing Purple School Glue Sticks, Child-Friendly, Acid-Free and Washable, 7 Grams, 60 Count - Ideal for Craft Projects, Classroom, Home, Office, Teacher Supplies",
+          category: "Supplies",
+          image: "images/15.jpg",
+        },
+        {
+          title: "Sharpie Permanent Markers, Fine Tip, Black, 12 Count - For Classroom, Office, & Home, Quick Drying, Fade Resistant, For Wood, Plastic, Paper, Metal, And More, Ideal for Posters, Drawing, Coloring",
+          category: "Supplies",
+          image: "images/16.jpg",
+        },
+        {
+          title: "Swiffer WetJet Hardwood Floor Cleaner Spray Mop Pad Refill, Bathroom Cleaning Supplies, Hardwood Floor Cleaner, Multi Surface, 24 Count",
+          category: "Supplies",
+          image: "images/17.jpg",
+        },
+        {
+          title: "Slim Jim Smoked Meat Sticks, Original Flavor, 6g Protein Per Serving, Snack Size, 0.28 oz. (46 Count)",
+          category: "Food Items",
+          image: "images/18.jpg",
+        },
+        {
+          title: "Hefty Strong Extra Large Trash Bags, Black, 33 Gallon, 48 Count",
+          category: "Supplies",
+          image: "images/19.jpg",
+        },
+        {
+          title: "Glade Automatic Spray Air Freshener Refill, Scented Air Freshener for Home and Bathroom, Clean Linen, 6.2 Oz, 3 Count",
+          category: "Supplies",
+          image: "images/20.jpg",
+        },
+        {
+          title: "Elmer's All Purpose School Glue Sticks, Acid-Free and Washable, Clear, 7 Grams, 30 Count - Ideal for Craft Projects, Scrapbooking, Classroom, Home, Office, Teacher Supplies",
+          category: "Supplies",
+          image: "images/21.jpg",
+        },
+        {
+          title: "Welch's Fruit Snacks, Mixed Fruit, Bulk Pack, Individual Single Serve Bags, 0.8 oz (Pack of 40)",
+          category: "Food Items",
+          image: "images/22.jpg",
+        },
+        {
+          title: "Febreze Air Mist Air Freshener Spray, Odor-Fighting Room Spray for Home and Bathroom and Kitchen, Aerosol Can, Refresh & Energize, Soothe & Restore, Romance & Desire Scent, 8.8oz, 3 Count",
+          category: "Supplies",
+          image: "images/23.jpg",
+        },
+        {
+          title: "BIC(R) Wite-Out(R) Correction Tape, 471 3/5in., Pack Of 10, BICWOTAP10",
+          category: "Supplies",
+          image: "images/24.jpg",
+        },
       ];
 
       const productGrid = document.getElementById("productGrid");
       const categoryFilter = document.getElementById("categoryFilter");
       const pagination = document.getElementById("pagination");
-      const itemsPerPage = 4;
+      const itemsPerPage = 6;
       let currentPage = 1;
 
       function paginateItems(items, page) {
@@ -193,7 +271,6 @@
           <div class="bg-white rounded-lg shadow p-4 flex flex-col">
             <img src="${p.image}" alt="${p.title}" class="h-40 w-full object-cover rounded-md" />
             <h4 class="mt-4 text-lg font-semibold">${p.title}</h4>
-            <p class="text-sm text-gray-600 flex-grow">${p.description ?? ''}</p>
           </div>
         `).join("");
 
